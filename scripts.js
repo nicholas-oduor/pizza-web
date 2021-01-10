@@ -190,3 +190,11 @@ let totalAmount = 0;
         $(".finalAmount").show();
         alert(customerName + ": Your total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hour");
     });
+    $("#contacts").submit(function (event) {
+        event.preventDefault();
+        let name1 = $("#form1").val();
+        let email = $("#form2").val();
+        let message1 = $("#form3").val();
+        alert("Hello! " + name1 + "," + " We have received your message. Thank you for reaching out to us. ");
+
+    });
