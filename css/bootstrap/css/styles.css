@@ -122,3 +122,8 @@ textarea {
 #sayhi ::placeholder {
     color: white;
 }
+
+#sayhi input {
+    color: white;
+    background-color: transparent;
+}
