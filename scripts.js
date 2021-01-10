@@ -42,3 +42,14 @@ let totalAmount = 0;
             return 0;
         }
     };
+    Pizza.prototype.myTypePrice = function () {
+        if (this.size === "large") {
+            if (this.type === "Veg Tikka") {
+                return 1200;
+            } else if (this.type === "Periperi") {
+                return 1300;
+            } else if (this.type === "Hawaiian") {
+                return 1100;
+            } else {
+                return 900;
+            }
