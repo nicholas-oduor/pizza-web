@@ -44,12 +44,36 @@ let totalAmount = 0;
     };
     Pizza.prototype.myTypePrice = function () {
         if (this.size === "large") {
-            if (this.type === "Veg Tikka") {
+            if (this.type === "barbecue ") {
                 return 1200;
-            } else if (this.type === "Periperi") {
+            } else if (this.type === "vergie lovers") {
                 return 1300;
             } else if (this.type === "Hawaiian") {
                 return 1100;
             } else {
                 return 900;
             }
+
+
+        } else if (this.size === "medium") {
+            if (this.type === "barbecue") {
+                return 850;
+            } else if (this.type === "vergie lovers") {
+                return 950;
+            } else if (this.type === "Hawaiian") {
+                return 850;
+            } else {
+                return 750;
+            }
+        } else {
+            if (this.type === "barbecue") {
+                return 600;
+            } else if (this.type === "vergie lovers") {
+                return 650;
+            } else if (this.type === "Hawaiian") {
+                return 750;
+            } else {
+                return 550;
+            }
+        }
+    }
