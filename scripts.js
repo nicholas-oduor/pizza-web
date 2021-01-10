@@ -77,3 +77,16 @@ let totalAmount = 0;
             }
         }
     }
+
+    Pizza.prototype.myCrustPrice = function () {
+        if (this.crust === "pepperoni") {
+            return 100;
+        } else if (this.crust === "cauliflower") {
+            return 50;
+        } else {
+            return 10;
+        }
+    }
+    Pizza.prototype.myPizzaPrice = function () {
+        return this.myCrustPrice() + this.myTypePrice() + this.myToppingsPrice()
+    }
