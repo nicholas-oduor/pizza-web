@@ -137,3 +137,10 @@ textarea {
 .hidden {
     display: none;
 }
+.checkout-options,
+.location {
+    background: rgb(29, 43, 245);
+    padding: 20px;
+    width: 80%;
+    height: 60vh;
+}
