@@ -108,4 +108,44 @@ let totalAmount = 0;
         for (let i = 0; i < newOrder.length; i++) {
             totalAmount += newOrder[i].myPizzaPrice();
         }
-    
+        $("#order-summary").append(
+            "<tr>" +
+            '<th scope="row">' +
+            newPizza.type +
+            " - " +
+            newPizza.size +
+            "  @ " +
+            newPizza.myTypePrice() +
+            "</th>" +
+            "<td>" +
+            newPizza.toppings +
+            " @ " +
+            newPizza.myToppingsPrice() +
+            "</td>" +
+            "<td>" +
+            newPizza.crust +
+            " @ " +
+            newPizza.myCrustPrice() +
+            "</td>" +
+            "<td>" +
+            newPizza.myPizzaPrice() +
+            "</td>" +
+            "</tr>"
+        );
+        $("#order-summary").append("");
+        if (newOrder.length > 0) {
+            $("#form-title").empty();
+            $("#form-title").append("Add Another Order");
+        }
+
+        $("#finalAmount").fadeIn();
+        $("#checkout").fadeIn();
+        $("#orders-div").fadeIn();
+
+        $("#finalAmount").empty();
+        $("#finalAmount").append(totalAmount);
+        $(".finalAmount").show();
+    });
+    $("#checkout").click(function () {
+        $(".checkout-options").show();
+    });
