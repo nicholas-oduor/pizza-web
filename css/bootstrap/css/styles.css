@@ -127,3 +127,13 @@ textarea {
     color: white;
     background-color: transparent;
 }
+
+.finalAmount,
+.delivery-cost {
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.hidden {
+    display: none;
+}
