@@ -18,3 +18,29 @@ Here is a working live demo : https://github.com/nicholas-oduor/pizza-web
 The pizza-web is compatible with devices of all sizes and all OS's, and consistent improvements are being made.
 
 ## [Usage](https://nicholas-oduor.github.io/pizza-web/)
+
+### Development
+
+Want to contribute? Awesome!
+To fix a bug or enhance an existing module, follow these steps:
+- Fork the repo
+- Create a new branch (`git checkout -b improve-feature`)
+- Make the appropriate changes in the files
+- Add changes to reflect the changes made
+- Commit your changes (`git commit -am 'Improve feature'`)
+- Push to the branch (`git push origin improve-feature`)
+- Create a Pull Request
+
+## Built with
+
+- [HTML](https://www.w3schools.com/html/) - HTML tutorial.
+- [CSS](https://www.w3schools.com/css/) - css tutorial.
+- [Javascript](https://www.w3schools.com/js/) - javascrit tutorial.
+
+## Author
+- Nicholas Oduor 
+
+## License 
+[MIT]()
+
+ © [Nicholas  Oduor](https://github.com/nicholas-oduor/pizza-web)
