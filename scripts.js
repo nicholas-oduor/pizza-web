@@ -149,3 +149,44 @@ let totalAmount = 0;
     $("#checkout").click(function () {
         $(".checkout-options").show();
     });
+
+    $("#checkout-form").submit(function (event) {
+        event.preventDefault();
+        let name = $("#name").val();
+        let deliveryOption = $("#delivery-option").val();
+        customerName = name;
+        $("#name").val("");
+        $("#delivery-option").val("");
+        $(".checkout-options").hide();
+        $("#checkout").hide();
+        $("#finalAmount").empty();
+        if (deliveryOption === "deliver") {
+            $(".location").show();
+            $(".delivery-cost").show();
+            $("#finalAmount").empty();
+            $("#delivery-amount").append(300);
+            totalAmount += 300;
+            $("#finalAmount").empty();
+            $("#finalAmount").empty();
+        $("#finalAmount").append(totalAmount);
+        $(".finalAmount").show();
+
+            $("#finalAmount").append(totalAmount);
+        } else {
+            alert(customerName + ": Your total bill is Ksh. " + totalAmount + ". Your order will be ready for collection in the next one hour");
+        }
+    });
+
+    $("#location-form").submit(function (event) {
+        event.preventDefault();
+        let estateEntered = $("#estate").val();
+        let houseNumberEntered = $("#house-number").val();
+        estate = estateEntered;
+        houseNumber = houseNumberEntered;
+        $("#checkout").hide();
+        $(".location").hide();
+        $("#finalAmount").empty();
+        $("#finalAmount").append(totalAmount);
+        $(".finalAmount").show();
+        alert(customerName + ": Your total bill is Ksh. " + totalAmount + ". Your order will be delivered to " + estate + ", " + houseNumber + " in the next one hour");
+    });
