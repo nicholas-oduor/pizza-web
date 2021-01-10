@@ -90,3 +90,22 @@ let totalAmount = 0;
     Pizza.prototype.myPizzaPrice = function () {
         return this.myCrustPrice() + this.myTypePrice() + this.myToppingsPrice()
     }
+    $("#customer-form").submit(function (event) {
+        event.preventDefault();
+        let customerType = $("#ptype").val();
+        let customerCrust = $("#crust").val();
+        let customerSize = $("#size").val();
+        let customerToppings = $("#toppings").val();
+        let newPizza = new Pizza(customerType, customerCrust, customerToppings, customerSize);
+        newOrder.push(newPizza);
+        $("#ptype").val("");
+        $("#crust").val("");
+        $("#size").val("");
+        $("#toppings").val("");
+
+        totalAmount = 0;
+
+        for (let i = 0; i < newOrder.length; i++) {
+            totalAmount += newOrder[i].myPizzaPrice();
+        }
+    
