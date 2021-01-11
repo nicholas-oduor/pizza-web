@@ -1,9 +1,10 @@
 * {
     box-sizing: border-box;
-    
+
 }
+
 li {
-    float: right;
+    float: left;
 }
 
 nav a {
@@ -12,10 +13,11 @@ nav a {
 }
 
 li {
-    background-color: rgb(94, 233, 52);
+    background-color: rgb(26, 250, 231);
     display: inline;
     margin-right: 20px;
 }
+
 .h-buttons {
     margin-top: 450px;
     margin-bottom: 100px;
@@ -23,16 +25,17 @@ li {
 
 .h-buttons button {
     border-radius: 40px;
-    color: rgb(245, 105, 105);
+    color: rgb(226, 19, 19);
 }
+
 .intro {
-    background-image: url(../images/p4.jpeg);
+    background-image: url(./images/p5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 620px;
     text-align: right;
-    color: white;
+    color: rgb(3, 3, 3);
 }
 
 .text-center p {
@@ -40,7 +43,7 @@ li {
 }
 
 #spantext {
-    color: yellow;
+    color: rgb(245, 59, 35);
 }
 
 .exe {
@@ -53,6 +56,7 @@ li {
     font-weight: normal;
     color: rgb(245, 29, 29);
 }
+
 #order-pizza {
     color: rgb(245, 29, 29);
 }
@@ -95,7 +99,7 @@ h2 {
 
 .contact>h2 {
     text-align: center;
-    color: white;
+    color: rgb(8, 43, 199);
     font-weight: bold;
     padding: 25px;
 }
@@ -109,7 +113,7 @@ h2 {
 textarea {
     width: 100%;
     height: 200px;
-    color: white;
+    color: rgb(3, 3, 3);
     padding: 12px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -120,11 +124,11 @@ textarea {
 }
 
 #sayhi ::placeholder {
-    color: white;
+    color: rgb(7, 7, 7);
 }
 
 #sayhi input {
-    color: white;
+    color: rgb(10, 10, 10);
     background-color: transparent;
 }
 
@@ -137,6 +141,7 @@ textarea {
 .hidden {
     display: none;
 }
+
 .checkout-options,
 .location {
     background: rgb(29, 43, 245);

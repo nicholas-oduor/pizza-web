@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/bootstrap.css">
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-        <link rel="stylesheet" href="./css/styles.css">
-        <title>Pizza Web</title>
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scripts.js">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Pizza Web</title>
+</head>
+
 <body>
     <div class="container-fluid">
-        
+
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <h1 id="piz-pap" class="">Pi<span id="spantext">zz</span>a shop</h1>
             <div class="nav">
@@ -46,13 +50,13 @@
                     <div class="col-md-6 offset-sm-3">
                         <h2>ABOUT US</h2>
                         <p>Pizza planet is a Kenyan based pizza restaurant located in Thika Road Mall.
-                            Enjoy over 21 pizza flavors and p’zone at affordable prizes. 
+                            Enjoy over 21 pizza flavors and p’zone at affordable prizes.
                             Go crazy with Smoothie Planet 15 flavors of ice-cream
-                             served in ice-cream cup and 26 flavors of milk shake 
-                             and the best smoothies in Kenya all at affordable prices.</p>
+                            served in ice-cream cup and 26 flavors of milk shake
+                            and the best smoothies in Kenya all at affordable prices.</p>
                     </div>
                 </div><br>
-    
+
             </div>
 
             <div class="container" menu id="menu">
@@ -69,7 +73,7 @@
                     </div>
                     <div class="col-md-4 p-2">
                         <div class="card card1">
-                            <img src="./images/p2.jpeg" class="img-fluid" alt="Medium size">
+                            <img src="./images/p2.jpg" class="img-fluid" alt="Medium size">
                             <div class="project2">
                                 <p id="pro">Medium Size</p>
                             </div>
@@ -77,7 +81,7 @@
                     </div>
                     <div class="col-md-4 p-2">
                         <div class=" card card2">
-                            <img src="./images/p3.jpeg" class="img-fluid" alt="Large size">
+                            <img src="./images/p3.jpg" class="img-fluid" alt="Large size">
                             <div class="project3">
                                 <p id="pro">Large Size</p>
                             </div>
@@ -100,7 +104,7 @@
                                         <label>Choose your pizza Flavour:</label>
                                         <select class="custom-select custom-select-md mb-3 flavour" id="ptype" required>
                                             <option value=""></option>
-                                            <option value="chicken Tikka">Chick en  Tikka</option>
+                                            <option value="chicken Tikka">Chick en Tikka</option>
                                             <option value="meat">Meat lovers</option>
                                             <option value="vergie">Vergie lovers</option>
                                             <option value="Hawaiian">Hawaiian</option>
@@ -108,130 +112,132 @@
                                         </select>
 
                                         <label>Chose your preferred Size:</label>
-                                    <select class="custom-select custom-select-md mb-3" id="size" required>
-                                        <option value=""></option>
-                                        <option value="small">Small</option>
-                                        <option value="medium">Medium</option>
-                                        <option value="large">Large</option>
-                                    </select>
-                                    <label for="crust">Choose your favorite Crust:</label>
-                                    <select class="custom-select custom-select-md mb-3" id="crust" required>
-                                        <option value=""></option>
-                                        <option value="dorminogarlic">Dormino's Garlic crust</option>
-                                        <option value="cauliflower">Cauliflower Crust</option>
-                                        <option value="pepperoni">Pepperoni Crust</option>
-                                    </select>
-                                    <label>Select Your favourite Toppings</label>
-                                    <select class="custom-select custom-select-md mb-3" id="toppings" required>
-                                        <option value=""></option>
-                                        <option value="pancetta">pancetta</option>
-                                        <option value="mushroom">Mushroom</option>
-                                        <option value="gorgonzola">gorgonzola</option>
-                                        <option value="radicchio">Radicchio</option>
-                                    </select>
-                                    <button type="submit" class="btn btn-success">
-                                        Checkout
-                                    </button>
-                                </form>
+                                        <select class="custom-select custom-select-md mb-3" id="size" required>
+                                            <option value=""></option>
+                                            <option value="small">Small</option>
+                                            <option value="medium">Medium</option>
+                                            <option value="large">Large</option>
+                                        </select>
+                                        <label for="crust">Choose your favorite Crust:</label>
+                                        <select class="custom-select custom-select-md mb-3" id="crust" required>
+                                            <option value=""></option>
+                                            <option value="dorminogarlic">Dormino's Garlic crust</option>
+                                            <option value="cauliflower">Cauliflower Crust</option>
+                                            <option value="pepperoni">Pepperoni Crust</option>
+                                        </select>
+                                        <label>Select Your favourite Toppings</label>
+                                        <select class="custom-select custom-select-md mb-3" id="toppings" required>
+                                            <option value=""></option>
+                                            <option value="pancetta">pancetta</option>
+                                            <option value="mushroom">Mushroom</option>
+                                            <option value="gorgonzola">gorgonzola</option>
+                                            <option value="radicchio">Radicchio</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-success">
+                                            Checkout
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6">
-                    <div class="col-md" id="orders-div">
-                        <div class="row">
-                            <h3>Clients' Orders</h3>
-                            <table class="table table-striped table-dark">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Type</th>
-                                        <th scope="col">Topping</th>
-                                        <th scope="col">Crust</th>
-                                        <th scope="col">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody id="order-summary"></tbody>
-                            </table>
-                            <p class="delivery-cost hidden">
-                                Delivery: Ksh. <span id="delivery-amount"></span>
-                            </p>
-                            <p class="finalAmount hidden">
-                                Total: Ksh. <span id="finalAmount"></span>
-                            </p>
-                            <br /><br />
-                            <button class="btn btn-primary hidden" id="checkout">Please proceed</button>
-                        </div>
-                        <div class="checkout-options hidden">
-                            <h3>Checkout Form</h3>
-                            <form id="checkout-form">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
-                                        required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Delivery Option</label>
-                                    <select class="form-control" id="delivery-option" required>
-                                        <option value="">...</option>
-                                        <option value="collect">Collect</option>
-                                        <option value="deliver">Deliver</option>
-                                        
-                                    </select>
-                                </div>
-    
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                        <div class="location hidden">
-                            <form id="location-form">
-                                <h3>Enter Location</h3>
-                                <div class="form-group">
-                                    <label>Estate</label>
-                                    <input type="text" class="form-control" id="estate" placeholder="Enter Your Name"
-                                        required />
-                                </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect1">House Number</label>
-                                    <input type="text" class="form-control" id="house-number" placeholder="Enter Your Name"
-                                        required />
-                                </div>
-    
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-    
-                        </div>
-                        <div id="contact">
-                            <div class="p-3 mb-2 bg-secondary text-white">
-                                <h2>CONTACT US</h2>
-                                <p>Feel free to reach us through the below address</p>
-                                <div class="row">
-                                    <div class="col-md-2"></div>
-                                    <div class="col-md-8">
-                                        <form id="contacts" name="contacts" class="validate">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <input type="text" class="form-control" id="form1" placeholder="Name"
-                                                        name="cname" required>
+                    <div class="col-md-6">
+                        <div class="col-md" id="orders-div">
+                            <div class="row">
+                                <h3>Clients' Orders</h3>
+                                <table class="table table-striped table-dark">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Type</th>
+                                            <th scope="col">Topping</th>
+                                            <th scope="col">Crust</th>
+                                            <th scope="col">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="order-summary"></tbody>
+                                </table>
+                                <p class="delivery-cost hidden">
+                                    Delivery: Ksh. <span id="delivery-amount"></span>
+                                </p>
+                                <p class="finalAmount hidden">
+                                    Total: Ksh. <span id="finalAmount"></span>
+                                </p>
+                                <br /><br />
+                                <button class="btn btn-primary hidden" id="checkout">Please proceed</button>
+                            </div>
+                            <div class="checkout-options hidden">
+                                <h3>Checkout Form</h3>
+                                <form id="checkout-form">
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" class="form-control" id="name" placeholder="Enter Your Name"
+                                            required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">Delivery Option</label>
+                                        <select class="form-control" id="delivery-option" required>
+                                            <option value="">...</option>
+                                            <option value="collect">Collect</option>
+                                            <option value="deliver">Deliver</option>
+
+                                        </select>
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+                            </div>
+                            <div class="location hidden">
+                                <form id="location-form">
+                                    <h3>Enter Location</h3>
+                                    <div class="form-group">
+                                        <label>Estate</label>
+                                        <input type="text" class="form-control" id="estate"
+                                            placeholder="Enter Your Name" required />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlSelect1">House Number</label>
+                                        <input type="text" class="form-control" id="house-number"
+                                            placeholder="Enter Your Name" required />
+                                    </div>
+
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                </form>
+
+                            </div>
+                            <div id="contact">
+                                <div class="p-3 mb-2 bg-secondary text-white">
+                                    <h2>CONTACT US</h2>
+                                    <p>Feel free to reach us through the below address</p>
+                                    <div class="row">
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-8">
+                                            <form id="contacts" name="contacts" class="validate">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input type="text" class="form-control" id="form1"
+                                                            placeholder="Name" name="cname" required>
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="email" class="form-control" id="form2"
+                                                            placeholder="Email" name="email" required>
+                                                    </div>
                                                 </div>
-                                                <div class="col">
-                                                    <input type="email" class="form-control" id="form2" placeholder="Email"
-                                                        name="email" required>
+                                                <div class="form-group" id="sayhi"><br>
+                                                    <textarea id="form3" id="message" rows="9"
+                                                        placeholder="Your Message here..." name="message"
+                                                        required></textarea>
                                                 </div>
-                                            </div>
-                                            <div class="form-group" id="sayhi"><br>
-                                                <textarea id="form3" id="message" rows="9" placeholder="Your Message here..."
-                                                    name="message" required></textarea>
-                                            </div>
-                                            <button type="submit" id="submit2"
-                                                class="btn btn-outline-light btn-lg btn-block">Submit</button>
-                                        </form>
+                                                <button type="submit" id="submit2"
+                                                    class="btn btn-outline-light btn-lg btn-block">Submit</button>
+                                            </form>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-        </div>
-    
+                        </div>
+                        
 </body>
+
 </html>

@@ -1,11 +1,12 @@
 $(document).ready(function () {
-function Pizza(type, crust, toppings, size) {
-    this.type = type;
-    this.crust = crust;
-    this.toppings = toppings;
-    this.size = size;
-}
-let totalAmount = 0;
+
+    function Pizza(type, crust, toppings, size) {
+        this.type = type;
+        this.crust = crust;
+        this.toppings = toppings;
+        this.size = size;
+    }
+    let totalAmount = 0;
     let newOrder = [];
 
     Pizza.prototype.myToppingsPrice = function () {
@@ -168,8 +169,8 @@ let totalAmount = 0;
             totalAmount += 300;
             $("#finalAmount").empty();
             $("#finalAmount").empty();
-        $("#finalAmount").append(totalAmount);
-        $(".finalAmount").show();
+            $("#finalAmount").append(totalAmount);
+            $(".finalAmount").show();
 
             $("#finalAmount").append(totalAmount);
         } else {
@@ -198,3 +199,4 @@ let totalAmount = 0;
         alert("Hello! " + name1 + "," + " We have received your message. Thank you for reaching out to us. ");
 
     });
+});
