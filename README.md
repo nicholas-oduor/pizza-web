@@ -41,6 +41,6 @@ To fix a bug or enhance an existing module, follow these steps:
 - Nicholas Oduor 
 
 ## License 
-[MIT]()
+[MIT](https://nicholas-oduor.github.io/pizza-web/)
 
  © [Nicholas  Oduor](https://github.com/nicholas-oduor/pizza-web)
